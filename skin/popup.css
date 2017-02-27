@@ -14,41 +14,58 @@
  * You should have received a copy of the GNU General Public License
  * along with Privacy Badger.  If not, see <http://www.gnu.org/licenses/>.
  */
- /*adjoining-classes:ignore*/
- /*csslint ids:ignore*/
 
-body {
-  min-width: 200px;
-  max-width: 400px;
-  font-size: 12px;
-  background: #fefefe;
-  color: #333;
-  font-family: helvetica, arial, sans-serif;
-  padding-left: 7px;
-  padding-right: 7px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  width: 400px;
+
+/*adjoining-classes:ignore*/
+
+
+/*csslint ids:ignore*/
+
+* {
+    box-sizing: border-box;
 }
 
-a { text-decoration: none }
-a:hover { color: #ec9329 }
+body, html {
+    height: auto;
+    min-height: 400px;
+}
+
+body {
+    font-size: 12px;
+    background: #fefefe;
+    color: #333;
+    font-family: helvetica, arial, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    min-width: 200px;
+    max-width: 500px;
+    width: 431px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    color: #ec9329
+}
 
 #filtersList {
-  border: 1px dotted gray;
-  padding: 1px;
-  display: none;
-  background-color: #BFBFBF;
+    border: 1px dotted gray;
+    padding: 1px;
+    display: none;
+    background-color: #BFBFBF;
 }
 
 .checkbox label {
-  min-height: 20px;
-  padding-left: 20px;
-  cursor: pointer;
+    min-height: 20px;
+    padding-left: 20px;
+    cursor: pointer;
 }
 
 .checkbox label span {
-  padding-left: 0.5em;
+    padding-left: 0.5em;
 }
 
 .ui-button {
@@ -56,333 +73,491 @@ a:hover { color: #ec9329 }
 }
 
 .spacer {
-  height: 7px;
-  width: 5px;
-  display: block;
-  clear: both;
+    height: 20px;
+    width: 5px;
+    display: block;
+    clear: both;
 }
 
-.click-nav ul {position:relative;font-weight:900;list-style-type:none;}
-.click-nav ul li {position:relative;list-style:none;cursor:pointer;}
-.click-nav ul li ul {position:relative;}
-.click-nav ul .clicker {position:relative;background:#2284B5;color:#FFF;}
-.click-nav ul .clicker:hover,.click-nav ul .active {background:#196F9A;}
-.click-nav .imglink img {position:absolute;top:9px;left:12px;}
-.click-nav ul li a {transition:background-color 0.2s ease-in-out;-webkit-transition:background-color 0.2s ease-in-out;
--o-transition:background-color 0.2s ease-in-out;
--moz-transition:background-color 0.2s ease-in-out;display:block;padding:8px 10px 8px 40px;background:#FFF;color:#333;text-decoration:none;}
-.click-nav ul li a:hover {background:#F2F2F2;}
-.click-nav ul .userset {background-image:url('/skin/lock.png');background-repeat:no-repeat;background-position: right center;}
-.clicker{
-  border-top: 1px solid #aaaaaa;
-  padding: 5px;
-  height: 40px;
-  overflow: hidden;
+.click-nav ul {
+    position: relative;
+    font-weight: 900;
+    list-style-type: none;
 }
-.clicker.greyed { background: #aaa; }
-.origin{
-  width: 60%;
-  color: #555555;
-  float: left;
-  display: inline;
+
+.click-nav ul li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+
+.click-nav ul li ul {
+    position: relative;
+}
+
+.click-nav ul .clicker {
+    position: relative;
+    background: #2284B5;
+    color: #FFF;
+}
+
+.click-nav ul .clicker:hover, .click-nav ul .active {
+    background: #196F9A;
+}
+
+.click-nav .imglink img {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+}
+
+.click-nav ul li a {
+    transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    display: block;
+    padding: 8px 10px 8px 40px;
+    background: #FFF;
+    color: #333;
+    text-decoration: none;
+}
+
+.click-nav ul li a:hover {
+    background: #F2F2F2;
+}
+
+.click-nav ul .userset {
+    background-image: url('/skin/lock.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.clicker {
+    padding: 5px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.clicker.greyed {
+    background: #aaa;
+}
+
+.origin {
+    width: 60%;
+    color: #555555;
+    float: left;
+    display: inline;
 }
 
 .removeOrigin {
-  cursor: pointer;
-  float: right;
-  margin-right: 0px;
-  width: 10px;
+    cursor: pointer;
+    float: right;
+    margin-right: 0px;
+    width: 10px;
 }
 
 .removeOrigin:hover {
-  color: red;
+    color: red;
 }
 
-.switch-container{
-  width: 115px;
-  display: block;
-  margin-left: 220px;
+.switch-container {
+    width: 115px;
+    display: block;
+    margin-left: 247px;
 }
-.options .switch-container{
-  max-width: 114px;
+
+.options .switch-container {
+    max-width: 114px;
 }
-.clear{
-  clear: both;
+
+.clear {
+    clear: both;
 }
-.switch-candy a img{
-  width: 16px;
-  margin-left: auto;
-  margin-right: auto;
+
+.switch-candy a img {
+    width: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .block .switch-candy a {
-  background-color: #c61223;
-}
-.switch-candy:hover {
-  background: #868686;
-  cursor: pointer;
-}
-.cookieblock .switch-candy a{
-  background-color: #ffcc00;
-}
-.allow .switch-candy a,
-.noaction .switch-candy a{
-  background-color: #339900;
-}
-.honeybadgerPowered{
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  left: 337px;
-  bottom: 15px;
-  cursor: pointer;
-}
-.userset .honeybadgerPowered{
-  background: url('/icons/badger-pin.png') no-repeat;
-}
-.tooltipContainer{
-display: none;
-clear: both;
-color: #fcfcfc;
-font-size: 12px;
-background-color: #555;
-height: 12px;
-border-radius: 7px;
-padding: 3px;
-position: relative;
-bottom: 30px;
-left: 0;
-}
-.tooltipArrow{
-  position: relative;
-  bottom: 30px;
-  left: 5px;
-  display: none;
-}
-#privacyBadgerHeader{
-color: #505050;
-font-size: 16px;
-}
-#privacyBadgerHeader h2{
-  margin: 10px;
-  float: left;
-  color: #707070;
-  font-size: 26px;
-  font-weight: normal;
-  font-family: helvetica, arial, 'Lucida Grande', 'Segoe UI', Tahoma, 'DejaVu Sans', sans-serif;;
-}
-#privacyBadgerHeader img{
-  float: left;
-}
-#helplink {
-  padding-top: 5px;
-  color: #4183c4;
-}
-#thirdPartyCookiesError {
-  background-color: #f00;
-  color: #f0f0f0;
-}
-.ui-slider {
-  opacity: 0;
-  z-index: 20;
-}
-.ui-slider .ui-slider-handle {
-  cursor: move;
-}
-#siteControls {
-  margin-bottom: 5px;
+    background-color: #c61223;
+    border-radius: 20px;
 }
 
-#firstRun {
-  color: #EC9329;
-  text-align: center;
-  border-radius: 3px;
-  margin: 5px 0;
-  border: 2px solid #EC9329;
-  height: 68px;
-  padding-top: 24px;
-  font-weight: bold;
-  font-size: 14px;
+.switch-candy:hover {
+    background: #dadada;
+    cursor: pointer;
+}
+
+.cookieblock .switch-candy a {
+    background-color: #ffcc00;
+    border-radius: 20px;
+}
+
+.allow .switch-candy a, .noaction .switch-candy a {
+    background-color: #339900;
+}
+
+.honeybadgerPowered {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 368px;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.userset .honeybadgerPowered {
+    background: url('/icons/badger-pin.svg') no-repeat;
+}
+
+.tooltipContainer {
+    display: none;
+    clear: both;
+    color: #868686;
+    font-size: 12px;
+    background-color: #f3f3f3;
+    height: 20px;
+    border-radius: 3px;
+    padding: 3px 10px;
+    position: absolute;
+    top: 20px;
+    background: #f3f3f3;
+    right: 20px;
+}
+
+.tooltipArrow {
+    position: relative;
+    bottom: 30px;
+    left: 5px;
+    display: none;
+}
+
+#helplink {
+    padding-top: 5px;
+    color: #4183c4;
+}
+
+#thirdPartyCookiesError {
+    background-color: #f00;
+    color: #f0f0f0;
+}
+
+.ui-slider {
+    opacity: 0;
+    z-index: 20;
+}
+
+.ui-slider .ui-slider-handle {
+    cursor: move;
+}
+
+#siteControls {
+    margin-bottom: 5px;
+}
+
+.link {
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+button, .button {
+    background-color: #F9F9F9;
+    padding: 8px 33px;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button.button-cta {
+  background: #ec9329;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 #firstRun:hover {
-  /*color: #6ECD00;
+    /*color: #6ECD00;
   border: 2px solid #6ECD00;*/
-  cursor: pointer;
-  text-decoration: underline;
-  background-color: #EC9329;
-  color: #333;
-}
-#noBlockingLink{
-  text-align: center;
-  z-index: 20;
-  margin: auto;
-}
-#noBlockingLink a {
-  color:#4183c4;
-}
-.clickerContainer {
-  max-height: 290px;
-  overflow-y: auto;
-  background-color: #E8E9EA;
-}
-.key {
-  position: fixed;
-  height: 25px;
-  width: 235px;
-  z-index: 30;
-  background: #fefefe;
-  padding-top: 4px;
-  padding-left: 215px;
-}
-.key img{
-  margin-left: 19px;
-}
-.key .tooltipContainer{
-  position: absolute;
-  left: 3px;
-  top:-1;
-  box-shadow: 0px 5px 5px #000;
-}
-#instruction-outer {
-  display: none;
-  position: fixed;
-  height: calc(100% - 15px);
-  z-index: 99;
-  background-color:#000;
-  opacity: 0.1;
-}
-#instruction {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  background-color: #fff;
-  width: calc(100% - 60px);
-  color: #333;
-  text-align: left;
-  padding: 15px;
-  font-size: 14px;
-  border: 1px solid #555;
-  box-shadow: 5px 5px 5px #333;
-  border-radius: 4px;
-}
-#instruction img{
-  float: left;
-  display: inline;
-  padding: 10px 10px 0 0;
-}
-#fittslaw {
-  position: relative;
-  float: right;
-  padding: 0 0 10px 0;
-  cursor: pointer;
-}
-#options{
-  float: right;
-  padding-top: 7px;
-}
-#help{
-  float: right;
-  padding-right: 5px;
-  padding-top: 7px;
-}
-.clickerContainer{
-  margin-top: 25px;
-}
-#pbInstructions{
-  color: #505050;
-  font-size: 16px;
-  margin: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #EC9329;
+    color: #333;
 }
 
-.pbButton{
-  border-radius: 3px;
-  padding: 5px;
-  cursor: pointer;
-  text-align: center;
-  margin: 8px 0;
-  border: 2px solid #707070;
+#noBlockingLink {
+    text-align: center;
+    z-index: 20;
+    margin: auto;
+}
+
+#noBlockingLink a {
+    color: #4183c4;
+}
+
+.clickerContainer {
+    max-height: 290px;
+    overflow-y: auto;
+}
+
+.key {
+    z-index: 30;
+    background: #fefefe;
+    padding-top: 4px;
+    padding-left: 232px;
+}
+
+.key img {
+  margin-left: 26px;
+  width: 17px;
+}
+
+.key .tooltipContainer {
+    position: absolute;
+    left: 3px;
+    top: -1;
+    box-shadow: 0px 5px 5px #000;
+}
+
+.container {
+  height: 600px;
+  overflow: scroll;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 15px;
+}
+.header .title {
+  display: flex;
+  flex-grow: 1;
+}
+.header .title img {
+  margin-right: 10px;
+}
+
+.actions {
+  display: flex;
+}
+.actions svg {
+  width: 20px;
+  margin-right: 5px;
+}
+.actions a {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: #333333;
+}
+
+.donate {
+  display: flex;
+  position: fixed;
+  background-color: #27AE60;
+  color: white;
+  bottom: 0px;
   width: 100%;
-  color: #707070;
-  background-color: #fefefe;
+  left: 0px;
+  padding: 5px 20px;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+}
+.donate .description {
+  flex-basis: 65%;
+  padding-right: 30px;
+}
+.donate .title svg {
+margin-right: 5px;
+}
+.donate .title {
+  font-size: 14px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+.donate .action button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 7px 20px;
+  background: #6FCF97;
+  color: white;
+}
+.donate .action button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.donate .action button svg{
+  margin-bottom: 10px;
+}
+
+#instruction-outer {
+    display: none;
+    position: fixed;
+    height: calc(100% - 15px);
+    z-index: 99;
+    background-color: #000;
+    opacity: 0.1;
+}
+
+#instruction {
+    display: none;
+    z-index: 100;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    color: #4c4c4c;
+    text-align: center;
+    padding: 25px 15px 15px 15px;
+    font-size: 14px;
+    height: 100%;
+}
+
+#instruction p {
+    width: 300px;
+    margin: 10px auto;
+}
+
+#instruction .logo {
+    width: 70px;
+}
+
+#instruction .link {
+    font-size: 12px;
+    color: #ec9329;
+}
+
+.clickerContainer {
+    margin-top: 5px;
+}
+
+#pbInstructions {
+    color: #505050;
+    font-size: 13px;
+    margin: 0;
+}
+
+.pbButton {
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 8px 0;
+    border: 2px solid #707070;
+    width: 100%;
+    color: #707070;
+    background-color: #fefefe;
 }
 
 .pbButton:hover {
-  color: #000;
-  border: 2px solid #000;
+    color: #000;
+    border: 2px solid #000;
 }
 
 #nonTrackers {
-  text-align: center;
-  color: #f9f9f9;
-  background: #555;
-  height: auto;
-  font-size: 14px;
-  font-weight: bold;
+    height: auto;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
+
 #overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  font-size: 0.8em;
-  z-index: -1;
-  opacity: 0;
-  padding: 3%;
-  color: #ccc;
-  background: url("/skin/background.png");
-  transition: opacity .1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 0.8em;
+    z-index: -1;
+    opacity: 0;
+    padding: 3%;
+    color: #ccc;
+    background: url("/skin/background.png");
+    transition: opacity .1s ease;
 }
-  div#overlay.active {
+
+div#overlay.active {
     z-index: 31;
-    opacity: 1;}
+    opacity: 1;
+}
+
 #error_input {
-  display: block;
-  width: 70%;}
+    display: block;
+    width: 70%;
+}
+
 #report_title {
-  display: inline-block;
-  padding: 0;
-  margin: 0; }
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
 #report_label {
-  display: block;
-  margin: 1% 0;
-  font-weight: bold;}
+    display: block;
+    margin: 1% 0;
+    font-weight: bold;
+}
+
 #report_button, #report_cancel {
-  cursor: pointer;
-  margin: 2% 2% 0 0;}
+    cursor: pointer;
+    margin: 2% 2% 0 0;
+}
+
 #report_success {
-  color: green;}
+    color: green;
+}
+
 #report_fail {
-  color: red;}
+    color: red;
+}
+
 #report_close {
-  display: inline-block;
-  float: right;
-  background: none;
-  border: 0;
-  font-size: 1.2em;
-  margin: 0 25;
-  cursor: pointer;
-  color: #ccc;}
+    display: inline-block;
+    float: right;
+    background: none;
+    border: 0;
+    font-size: 1.2em;
+    margin: 0 25;
+    cursor: pointer;
+    color: #ccc;
+}
+
 #report_close:before {
-  content: '[X]';
-  margin: 5px;}
+    content: '[X]';
+    margin: 5px;
+}
+
 #report_close:hover {
-  text-decoration: underline;}
+    text-decoration: underline;
+}
+
 #dnt-compliant {
-  float: left;
-  display: inline;
+    float: left;
+    display: inline;
 }
+
 .hidden {
-  display: none;
+    display: none;
 }
+
 #overlay p {
-  font-size: 12px;
+    font-size: 12px;
 }
+
 #overlay label {
-  font-size: 13px;
+    font-size: 13px;
 }
+
 #siteControls button {
-  font-size: 12px;
+    font-size: 12px;
 }

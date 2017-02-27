@@ -104,12 +104,11 @@ var htmlUtils = exports.htmlUtils = {
       '<div id="associatedTab" data-tab-id="' + tabId + '"></div>' +
       '<div class="keyContainer">' +
       '<div class="key">' +
-      '<img class="tooltip" src="/icons/UI-icons-red.svg" tooltip="' + i18n.getMessage("tooltip_block") + '">' +
-      '<img class="tooltip" src="/icons/UI-icons-yellow.svg" tooltip="' + i18n.getMessage("tooltip_cookieblock") + '">' +
-      '<img class="tooltip" src="/icons/UI-icons-green.svg" tooltip="' + i18n.getMessage("tooltip_allow") + '">' +
+      '<img class="tooltip" src="/icons/block.svg" tooltip="' + i18n.getMessage("tooltip_block") + '">' +
+      '<img class="tooltip" src="/icons/nocookie.svg" tooltip="' + i18n.getMessage("tooltip_cookieblock") + '">' +
+      '<img class="tooltip" src="/icons/check.svg" tooltip="' + i18n.getMessage("tooltip_allow") + '">' +
       '<div class="tooltipContainer"></div>' +
-      '</div></div>' +
-      '<div class="spacer"></div>' +
+      '</div></div>' +      
       '<div id="blockedResourcesInner" class="clickerContainer"></div>';
     return trackerHtml;
   },
@@ -163,7 +162,6 @@ var htmlUtils = exports.htmlUtils = {
       '<div class="removeOrigin">&#10006</div>' +
       htmlUtils.getToggleHtml(origin, action) +
       '<div class="honeybadgerPowered tooltip" tooltip="'+ tooltipText + '"></div>' +
-      '<img class="tooltipArrow" src="/icons/badger-tb-arrow.png">' +
       '<div class="clear"></div>' +
       '<div class="tooltipContainer"></div>' +
       '</div>';

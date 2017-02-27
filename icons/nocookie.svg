@@ -1,0 +1,41 @@
+<svg width="22" height="23" viewBox="0 0 22 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>nocookie</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2327 -3)" figma:type="canvas">
+<g id="nocookie" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Subtract" style="mix-blend-mode:normal;" figma:type="vector-operation">
+<use xlink:href="#path0_fill" transform="translate(2327 4.00482)" style="mix-blend-mode:normal;"/>
+</g>
+<g id="ic_close_black_24px (3)" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(2330 11)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(2333 18)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(2338 14)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(2342 19)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(2341 4)" style="mix-blend-mode:normal;"/>
+<mask id="mask0_outline_out">
+<rect id="mask0_outline_inv" fill="white" x="-1" y="-1" width="8" height="8" transform="translate(2341 4)"/>
+<use xlink:href="#path2_fill" fill="black" transform="translate(2341 4)"/>
+</mask>
+<g mask="url(#mask0_outline_out)">
+<use xlink:href="#path3_stroke_2x" transform="translate(2341 4)" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 21.6491 8.2284C 20.4128 9.32752 18.7844 9.99518 17 9.99518C 13.134 9.99518 10 6.86118 10 2.99518C 10 1.92348 10.2408 0.908031 10.6713 0C 4.74823 0.173798 0 5.02998 0 10.9952C 0 17.0703 4.92487 21.9952 11 21.9952C 17.0751 21.9952 22 17.0703 22 10.9952C 22 10.0396 21.8781 9.1124 21.6491 8.2284Z"/>
+<path id="path1_fill" d="M 4 2C 4 3.10457 3.10457 4 2 4C 0.895431 4 0 3.10457 0 2C 0 0.895431 0.895431 0 2 0C 3.10457 0 4 0.895431 4 2Z"/>
+<path id="path2_fill" d="M 6 0.604286L 5.39571 0L 3 2.39571L 0.604286 0L 0 0.604286L 2.39571 3L 0 5.39571L 0.604286 6L 3 3.60429L 5.39571 6L 6 5.39571L 3.60429 3L 6 0.604286Z"/>
+<path id="path3_stroke_2x" d="M 6 0.604286L 6.35355 0.957839L 6.70711 0.604286L 6.35355 0.250732L 6 0.604286ZM 5.39571 0L 5.74927 -0.353553L 5.39571 -0.707107L 5.04216 -0.353553L 5.39571 0ZM 3 2.39571L 2.64645 2.74927L 3 3.10282L 3.35355 2.74927L 3 2.39571ZM 0.604286 0L 0.957839 -0.353553L 0.604286 -0.707107L 0.250732 -0.353553L 0.604286 0ZM 0 0.604286L -0.353553 0.250732L -0.707107 0.604286L -0.353553 0.957839L 0 0.604286ZM 2.39571 3L 2.74927 3.35355L 3.10282 3L 2.74927 2.64645L 2.39571 3ZM 0 5.39571L -0.353553 5.04216L -0.707107 5.39571L -0.353553 5.74927L 0 5.39571ZM 0.604286 6L 0.250732 6.35355L 0.604286 6.70711L 0.957839 6.35355L 0.604286 6ZM 3 3.60429L 3.35355 3.25073L 3 2.89718L 2.64645 3.25073L 3 3.60429ZM 5.39571 6L 5.04216 6.35355L 5.39571 6.70711L 5.74927 6.35355L 5.39571 6ZM 6 5.39571L 6.35355 5.74927L 6.70711 5.39571L 6.35355 5.04216L 6 5.39571ZM 3.60429 3L 3.25073 2.64645L 2.89718 3L 3.25073 3.35355L 3.60429 3ZM 6.35355 0.250732L 5.74927 -0.353553L 5.04216 0.353553L 5.64645 0.957839L 6.35355 0.250732ZM 5.04216 -0.353553L 2.64645 2.04216L 3.35355 2.74927L 5.74927 0.353553L 5.04216 -0.353553ZM 3.35355 2.04216L 0.957839 -0.353553L 0.250732 0.353553L 2.64645 2.74927L 3.35355 2.04216ZM 0.250732 -0.353553L -0.353553 0.250732L 0.353553 0.957839L 0.957839 0.353553L 0.250732 -0.353553ZM -0.353553 0.957839L 2.04216 3.35355L 2.74927 2.64645L 0.353553 0.250732L -0.353553 0.957839ZM 2.04216 2.64645L -0.353553 5.04216L 0.353553 5.74927L 2.74927 3.35355L 2.04216 2.64645ZM -0.353553 5.74927L 0.250732 6.35355L 0.957839 5.64645L 0.353553 5.04216L -0.353553 5.74927ZM 0.957839 6.35355L 3.35355 3.95784L 2.64645 3.25073L 0.250732 5.64645L 0.957839 6.35355ZM 2.64645 3.95784L 5.04216 6.35355L 5.74927 5.64645L 3.35355 3.25073L 2.64645 3.95784ZM 5.74927 6.35355L 6.35355 5.74927L 5.64645 5.04216L 5.04216 5.64645L 5.74927 6.35355ZM 6.35355 5.04216L 3.95784 2.64645L 3.25073 3.35355L 5.64645 5.74927L 6.35355 5.04216ZM 3.95784 3.35355L 6.35355 0.957839L 5.64645 0.250732L 3.25073 2.64645L 3.95784 3.35355Z"/>
+</defs>
+</svg>

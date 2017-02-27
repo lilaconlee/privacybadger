@@ -35,16 +35,13 @@
   <div id="instruction-outer">
   </div>
   <div id="instruction" class="overlay">
-    <img src='/icons/badger-48.png'>
-    <svg id="fittslaw" width="30" height="30" fill="white">
-      <line x1="5" y1="5" x2="20" y2="20" style="stroke:rgb(22,22,22);stroke-width:3;fill:transparent"/>
-      <line x1="5" y1="20" x2="20" y2="5" style="stroke:rgb(22,22,22);stroke-width:3;fill:transparent"/>
-    </svg>
+    <img src='/icons/badger-logo.png' class="logo">
+    <h2>Privacy Badger</h2>
     <p class="i18n_intro_text"></p>
-    <br>
-    <div id="firstRun">
+    <button id="fittslaw" class="button button-cta">Get Started</button>
+    <span id="firstRun" class="link">
       <p class="i18n_first_run_text"></p>
-    </div>
+    </span>
   </div>
   <div id="overlay" class="overlay">
     <h1 id="report_title" class="i18n_report_title"></h1>
@@ -60,25 +57,56 @@
     <p id="report_terms" class="i18n_report_terms"></p>
   </div>
 <div id="mustReloadMsg" style="display:none"><span class="i18n_new_filters_added"></span></div>
+<div class="container">
+  <div id='privacyBadgerHeader' class="header">
+    <div id='title' class="title"><img src='/icons/badger-48.png'> <h2><span class="i18n_privacy_badger"></span></h2></div>
+    <div class="actions">
+      <a id="help" title="help" href='/skin/firstRun.html' target="_blank">
+        <svg fill="#333333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/>
+        </svg>
+        About
+      </a>
+      <a id="options" title="options" href='/skin/options.html' target="_blank">
+        <svg fill="#333333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+        </svg>
+        Settings
+      </a>
+    </div>
+    <div class='clear'></div>
+  </div>
+  <div id="blockedResourcesContainer">
+    <p id="pbInstructions"> <span class="i18n_pb_detected"></span> <span id='number_trackers'></span> <span class="i18n_popup_instructions"></span></p>
+    <div class="spacer"></div>
+    <div id="blockedResources"><span class="options_loading"></span></div>
+  </div>
 
-<div id='privacyBadgerHeader'>
-  <a id="options" title="options" href='/skin/options.html' class="control-button grey-button" style="display:block" target="_blank"><img src='/icons/options.svg'></a>
-  <a id="help" title="help" href='/skin/firstRun.html' class="control-button grey-button" style="display:block" target="_blank"><img src='/icons/help.svg'></a>
-    <div id='title'><img src='/icons/badger-48.png'> <h2><span class="i18n_privacy_badger"></span></h2></div>
+  <div id="siteControls">
+      <center><button id="deactivate_site_btn" class="button" style="display:block"><span class="i18n_popup_disable_for_site"></span></button></center>
+    <center><button id="activate_site_btn" class="button" style="display:none"> <span class="i18n_popup_enable_for_site"></span></button></center>
+    <center><button id="error" class="button" style="display:block" target="blank"><span class="i18n_report_broken_site"></span></button></center>
+    <div class="donate">
+      <div class="description">
+        <div class="title">
+          <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/>
+          </svg>
+          Loving Privacy Badger?
+        </div>
+      </div>
+      <div class="action">
+        <button id="donate" class="button" target="blank">
+          <span class="i18n_donate_to_eff"></span>
+        </button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
   <div class='clear'></div>
-</div>
-<div id="blockedResourcesContainer">
-  <p id="pbInstructions"> <span class="i18n_pb_detected"></span> <span id='number_trackers'></span> <span class="i18n_popup_instructions"></span></p>
-  <div class="spacer"></div>
-  <div id="blockedResources"><span class="options_loading"></span></div>
-</div>
-
-<div id="siteControls">
-    <center><button id="deactivate_site_btn" class="pbButton" style="display:block"><span class="i18n_popup_disable_for_site"></span></button></center>
-  <center><button id="activate_site_btn" class="pbButton" style="display:none"> <span class="i18n_popup_enable_for_site"></span></button></center>
-  <center><button id="error" class="pbButton" style="display:block" target="blank"><span class="i18n_report_broken_site"></span></button></center>
-  <center><button id="donate" class="pbButton" style="display:block" target="blank"><span class="i18n_donate_to_eff"></span></button></center>
-</div>
-<div class='clear'></div>
 </body>
 </html>
