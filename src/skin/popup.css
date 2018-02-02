@@ -78,9 +78,8 @@ a:hover { color: #ec9329 }
 -moz-transition:background-color 0.2s ease-in-out;display:block;padding:8px 10px 8px 40px;background:#FFF;color:#333;text-decoration:none;}
 .click-nav ul li a:hover {background:#F2F2F2;}
 .click-nav ul .userset {background-image:url('/skin/lock.png');background-repeat:no-repeat;background-position: right center;}
-.clicker{
-  padding: 5px;
-  height: 40px;
+.clicker{  
+  height: 35px;
   overflow: hidden;
   position: relative;
 }
@@ -135,8 +134,7 @@ a:hover { color: #ec9329 }
 .honeybadgerPowered{
   cursor: pointer;
   display: none;
-  height: 20px;
-  margin-top: 5px;
+  height: 20px; 
   position: absolute;
   right: -10px;
   top: 0;
