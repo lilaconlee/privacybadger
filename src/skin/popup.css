@@ -22,8 +22,8 @@ body {
   min-width: 430px; /* Chrome */
   max-width: 100%;  /* FF android */
   font-size: 12px;
-  background: #fefefe;
-  color: #333;
+  background: #fff;
+  color: #000;
   font-family: helvetica, arial, sans-serif;
   padding: 8px 15px 0;
   box-sizing: border-box;
@@ -79,10 +79,10 @@ a:hover { color: #ec9329 }
 .click-nav ul li a:hover {background:#F2F2F2;}
 .click-nav ul .userset {background-image:url('/skin/lock.png');background-repeat:no-repeat;background-position: right center;}
 .clicker{
-  border-top: 1px solid #aaaaaa;
   padding: 5px;
   height: 40px;
   overflow: hidden;
+  position: relative;
 }
 .clicker.greyed { background: #aaa; }
 .origin{
@@ -124,10 +124,6 @@ a:hover { color: #ec9329 }
 .block .switch-candy a {
   background-color: #c61223;
 }
-.switch-candy:hover {
-  background: #868686;
-  cursor: pointer;
-}
 .cookieblock .switch-candy a{
   background-color: #ffcc00;
 }
@@ -136,18 +132,18 @@ a:hover { color: #ec9329 }
   background-color: #339900;
 }
 .honeybadgerPowered{
-  display: none;
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  left: 337px;
-  bottom: 15px;
   cursor: pointer;
+  display: none;
+  height: 20px;
+  margin-top: 5px;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 20px;
 }
 .userset .honeybadgerPowered{
   display: block;
-  background: url('/icons/badger-pin.png') no-repeat;
+  background: url('/icons/reset.svg') no-repeat;
 }
 
 #privacyBadgerHeader{
@@ -205,7 +201,6 @@ font-size: 16px;
 .clickerContainer {
   max-height: 290px;
   overflow-y: auto;
-  background-color: #E8E9EA;
   position: relative;
 }
 .keyContainer{
@@ -222,7 +217,7 @@ font-size: 16px;
   padding-left: 215px;
 }
 .key img{
-  margin-left: 19px;
+  margin-left: 30px;
 }
 #instruction-outer {
   display: none;
