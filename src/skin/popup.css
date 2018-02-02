@@ -302,12 +302,10 @@ font-size: 16px;
 }
 
 #nonTrackers {
-  text-align: center;
-  color: #f9f9f9;
-  background: #555;
-  height: auto;
   font-size: 14px;
   font-weight: bold;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 #overlay {

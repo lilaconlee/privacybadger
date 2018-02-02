@@ -432,7 +432,7 @@
         "description": ""
     },
     "non_tracker": {
-        "message": "The domains below don't appear to be tracking you",
+        "message": "These domains don’t appear to be tracking you:",
         "description": ""
     },
     "slideshow_14": {
