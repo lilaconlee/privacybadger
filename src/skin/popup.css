@@ -280,10 +280,8 @@ font-size: 16px;
 }
 
 #pbInstructions {
-  color: #505050;
-  font-size: 16px;
-  padding-top: 10px;
-  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .pbButton{
