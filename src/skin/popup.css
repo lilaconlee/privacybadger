@@ -24,16 +24,16 @@ body {
   font-size: 12px;
   background: #fefefe;
   color: #333;
-  font-family: helvetica, arial, sans-serif;
-  padding: 8px 15px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 17px 15px 0;
   box-sizing: border-box;
   min-height: 270px;
 }
 @media screen and (min--moz-device-pixel-ratio:0) {
-    body{
-        min-width: 200px; /* FF android */
-        width: 430px;     /* FF desktop */
-    }
+  body{
+      min-width: 200px; /* FF android */
+      width: 430px;     /* FF desktop */
+  }
 }
 
 a { text-decoration: none }
@@ -85,6 +85,7 @@ a:hover { color: #ec9329 }
   overflow: hidden;
 }
 .clicker.greyed { background: #aaa; }
+
 .origin{
   max-width: 210px;
   color: #555555;
@@ -105,18 +106,18 @@ a:hover { color: #ec9329 }
   color: red;
 }
 
-.switch-container{
+.switch-container {
   width: 115px;
   display: block;
   margin-left: 220px;
 }
-.options .switch-container{
+.options .switch-container {
   max-width: 114px;
 }
-.clear{
+.clear {
   clear: both;
 }
-.switch-candy a img{
+.switch-candy a img {
   width: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -128,14 +129,14 @@ a:hover { color: #ec9329 }
   background: #868686;
   cursor: pointer;
 }
-.cookieblock .switch-candy a{
+.cookieblock .switch-candy a {
   background-color: #ffcc00;
 }
 .allow .switch-candy a,
-.noaction .switch-candy a{
+.noaction .switch-candy a {
   background-color: #339900;
 }
-.honeybadgerPowered{
+.honeybadgerPowered {
   display: none;
   margin-right: 10px;
   width: 20px;
@@ -145,16 +146,16 @@ a:hover { color: #ec9329 }
   bottom: 15px;
   cursor: pointer;
 }
-.userset .honeybadgerPowered{
+.userset .honeybadgerPowered {
   display: block;
   background: url('/icons/badger-pin.png') no-repeat;
 }
 
-#privacyBadgerHeader{
+#privacyBadgerHeader {
 color: #505050;
 font-size: 16px;
 }
-#privacyBadgerHeader h2{
+#privacyBadgerHeader h2 {
   margin: 5px;
   padding-left: 5px;
   float: left;
@@ -163,7 +164,7 @@ font-size: 16px;
   font-weight: normal;
   font-family: helvetica, arial, 'Lucida Grande', 'Segoe UI', Tahoma, 'DejaVu Sans', sans-serif;;
 }
-#privacyBadgerHeader img{
+#privacyBadgerHeader img {
   float: left;
 }
 
@@ -202,15 +203,18 @@ font-size: 16px;
   background-color: #EC9329;
   color: #333;
 }
+
 .clickerContainer {
   max-height: 290px;
   overflow-y: auto;
   background-color: #E8E9EA;
   position: relative;
 }
-.keyContainer{
+
+.keyContainer {
     position: relative;
-}
+ }
+
 .key {
   position: absolute;
   height: 25px;
@@ -221,9 +225,11 @@ font-size: 16px;
   padding-top: 4px;
   padding-left: 215px;
 }
+
 .key img{
   margin-left: 19px;
 }
+
 #instruction-outer {
   display: none;
   position: fixed;
@@ -232,6 +238,7 @@ font-size: 16px;
   background-color:#000;
   opacity: 0.1;
 }
+
 #instruction {
   display: none;
   position: fixed;
@@ -246,30 +253,36 @@ font-size: 16px;
   box-shadow: 5px 5px 5px #333;
   border-radius: 4px;
 }
-#instruction img{
+
+#instruction img {
   float: left;
   display: inline;
   padding: 10px 10px 0 0;
 }
+
 #fittslaw {
   position: relative;
   float: right;
   padding: 0 0 10px 0;
   cursor: pointer;
 }
-#options{
+
+#options {
   float: right;
   padding-top: 7px;
 }
-#help{
+
+#help {
   float: right;
   padding-right: 5px;
   padding-top: 7px;
 }
-.clickerContainer{
+
+.clickerContainer {
   margin-top: 25px;
 }
-#pbInstructions{
+
+#pbInstructions {
   color: #505050;
   font-size: 16px;
   padding-top: 10px;
@@ -301,6 +314,7 @@ font-size: 16px;
   font-size: 14px;
   font-weight: bold;
 }
+
 #overlay {
   position: absolute;
   top: 0;
@@ -317,7 +331,7 @@ font-size: 16px;
   background: url("/skin/background.png");
   transition: opacity .1s ease;
 }
-  div#overlay.active {
+div#overlay.active {
     z-index: 31;
     opacity: 1;}
 #error_input {
@@ -380,12 +394,12 @@ font-size: 16px;
 }
 
 .tooltipster-sidetip .tooltipster-box {
-    color: #fcfcfc;
-    font-size: 13px;
-    background: #555;
-    border: none;
-    border-radius: 7px;
+  color: #fcfcfc;
+  font-size: 13px;
+  background: #555;
+  border: none;
+  border-radius: 7px;
 }
 .tooltipster-sidetip .tooltipster-arrow-border {
-    border: none;
+  border: none;
 }
