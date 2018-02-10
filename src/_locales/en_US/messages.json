@@ -196,7 +196,7 @@
         "description": "This is an options page tab heading."
     },
     "popup_enable_for_site": {
-        "message": "Enable Privacy Badger for This Site",
+        "message": "Enable for this site",
         "description": ""
     },
     "options_domain_type_filter": {
@@ -264,7 +264,7 @@
         "description": ""
     },
     "report_broken_site": {
-        "message": "Did Privacy Badger break this site? Let us know!",
+        "message": "Report broken site",
         "description": ""
     },
     "tooltip_cookieblock": {
@@ -360,7 +360,7 @@
         "description": ""
     },
     "popup_disable_for_site": {
-        "message": "Disable Privacy Badger for This Site",
+        "message": "Disable for this site",
         "description": ""
     },
     "intro_social_share": {
