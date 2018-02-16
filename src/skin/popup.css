@@ -134,9 +134,9 @@ a:hover { color: #ec9329 }
 .honeybadgerPowered{
   cursor: pointer;
   display: none;
-  height: 20px; 
+  height: 20px;
   position: absolute;
-  right: -10px;
+  right: -3px;
   top: 0;
   width: 20px;
 }
@@ -208,18 +208,14 @@ font-size: 16px;
  }
 
 .key {
-  position: absolute;
-  height: 25px;
-  left: 0;
-  right: 0;
-  z-index: 30;
   background: #fefefe;
-  padding-top: 4px;
-  padding-left: 215px;
-}
-
-.key img{
-  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  position: absolute;
+  right: 35px;
+  width: 125px;
+  z-index: 30;
 }
 
 #instruction-outer {

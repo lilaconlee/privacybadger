@@ -132,9 +132,9 @@ var htmlUtils = exports.htmlUtils = {
       '<div id="associatedTab" data-tab-id="' + tabId + '"></div>' +
       '<div class="keyContainer">' +
       '<div class="key">' +
-      '<img src="/icons/UI-icons-red.svg" class="tooltip" title="' + i18n.getMessage("tooltip_block") + '">' +
-      '<img src="/icons/UI-icons-yellow.svg" class="tooltip" title="' + i18n.getMessage("tooltip_cookieblock") + '">' +
-      '<img src="/icons/UI-icons-green.svg" class="tooltip" title="' + i18n.getMessage("tooltip_allow") + '">' +
+      '<img src="/icons/block.svg" class="tooltip" title="' + i18n.getMessage("tooltip_block") + '">' +
+      '<img src="/icons/nocookie.svg" class="tooltip" title="' + i18n.getMessage("tooltip_cookieblock") + '">' +
+      '<img src="/icons/check.svg" class="tooltip" title="' + i18n.getMessage("tooltip_allow") + '">' +
       '</div></div>' +
       '<div class="spacer"></div>' +
       '<div id="blockedResourcesInner" class="clickerContainer"></div>';
